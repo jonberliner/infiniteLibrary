@@ -1,3 +1,5 @@
+![travis-ci](https://travis-ci.org/jonberliner/infiniteLibrary.svg?branch=jsDev)
+
 infiniteLibrary
 ===============
 
