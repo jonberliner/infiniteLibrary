@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "description": "",
   "main": "infinite_library.js",
+  "browserify": {
+    "transform": ["babelify"]
+  },
   "scripts": {
     "test": "jasmine",
-    "build": "browserify infinite_library.js --standalone infLib -t babelify --outfile bundle.js",
+    "build": "browserify infinite_library.js -t babelify --outfile bundle.js",
     "watch": "watchify infinite_library.js -d --debug --standalone infLib -t babelify -o bundle.js"
   },
   "repository": {
