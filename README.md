@@ -1,4 +1,4 @@
-![travis-ci](https://travis-ci.org/jonberliner/infiniteLibrary.svg?branch=jsDev)
+[![Build Status](https://travis-ci.org/jonberliner/infiniteLibrary.svg?branch=jsDev)](https://travis-ci.org/jonberliner/infiniteLibrary)
 
 infiniteLibrary
 ===============
