@@ -7,14 +7,16 @@ angular.module('app')
 function SearchController(){
     var vm = this;
     vm.query = "";
+    vm.output = "";
     vm.runQuery = runQuery;
     vm.submitId = submitId;
 
     function runQuery(){
-        return null
+        vm.output = infLib.getIndex(vm.query);
     }
 
     function submitId(){
-        return null
+        var book = infLib.generateBook(vm.query);
+        vm.output = book.length > 10000 ? book.slice(0,10000) + '...' : book;
     }
 }
