@@ -18,7 +18,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "browserify . -t babelify --outfile bundle.js",
-    "watch": "watchify . -d --debug -t babelify -o bundle.js"
+    "watch": "watchify . -d --debug -t babelify -o bundle.js",
+    "deploy": "gh-pages -d '.' -s '**/+(*.html|bundle.js)'"
   },
   "author": "",
   "license": "ISC",
